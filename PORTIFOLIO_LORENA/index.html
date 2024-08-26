@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fim google fonts -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio Pessoal</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src = "images/logo.png" alt="Logo.">
+                    </a>
+                </div><!-- fim logo -->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#portifolio">Portifólio</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn-contato">
+                    <a href="#contato">
+                        <button>Contato</button>
+                    </a>
+                </div>
+        </div><!-- fim interface cabeçalho-->
+    </header>
+    
+    <main>
+        <section id="sobre" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                            <h2 class="titulo">SOBRE <span>MIM;</span></h2>
+                            <h3><br>Hello Word!</h3>
+                            <p><span>{</span>
+                            Sou a Lorena, tenho 26 anos e adentrei recentemento o mundo da TI. <br> Após tentativas frustadas em outras áreas, completamente diferentes, arrisquei me aventurar em Engenharia de Computação após uma pesquisa sobre futuro e mercado. Infelizmente, não conegui me adaptar a faculdade integral, mas não desisti da área e consegui a transferência para Análise e Desenvolvimento de Sistemas no IFTM e uma bolsa integral em Engenharia de Software na Uninter. Desde então, tudo têm se encaminhado bem e tenho me fascinado cada fez mais pelas possibilidades que essa área nos oferece e nos permite criar. Atualmente, graças a uma oportunidade de estágio tenho aprofundado meus conhecimentos em Site Reliability Engineering e Devops. É insano e incrível! <br> Aproveite e navegue pelo site que construí para que você você possa conhecer um pouco mais sobre minha trajetória e experiências.
+                            <span>}</span></p>
+                    </div><!-- fim txt-topo-site -->
+
+                    <div class="img-topo-site">
+                        <img src="images/perfil.png" alt="Foto de perfil.">
+                    </div>
+                </div><!-- fim flex -->
+            </div><!-- fim interface topo -->
+        </section><!-- fim topo-do-site -->
+
+        <section id="formacao" class="formacao">
+            <div class="interface">
+                <h2 class="titulo">MINHA <span>FORMAÇÃO;</span></2>
+                <div class="flex">
+                    <div class="formacao-box">
+                        <div class="img-formacao">
+                            <img src="images/ads.png" alt="Ícone que representa código.">
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <p>Tecnólogo em andamento com conclusão prevista para 06/2026.</p>
+                        </div>
+                    </div><!-- fim formacao-box -->
+                    
+                    <div class="formacao-box">
+                        <div class="img-formacao">
+                            <img src="images/software.png" alt="Ícone que representa Engenharia de Software.">
+                            <h3>Engenharia de Software</h3>
+                            <p>Bacharelado em andamento com conclusão prevista para 06/2027.</p>
+                        </div>
+                    </div><!-- fim formacao-box -->
+                </div><!-- fim flex -->
+            </div><!-- fim interface -->
+        </section><!-- fim formacao -->
+
+        <section id="experiencia" class="experiencia">
+            <div class="interface">
+                <h2 class="titulo">MINHA <span>EXPERIÊNCIA;</span></2>
+                <div class="flex">
+                    <div class="formacao-box">
+                        <div class="img-formacao">
+                            <img src="images/sre.png" alt="Ícone que representa SRE.">
+                            <h3>Estágio em Site Reliability Engineering</h3>
+                            <h3>PAGBANK - 6 meses</h3>
+                            <p>Atividades relacionadas a implantação em produção, monitoramento e solução de incidentes e problemas de forma ágil, segura e estável.</p>
+                        </div>
+                    </div><!-- fim formacao-box -->
+                </div><!-- fim flex -->
+        </section><!-- fim experiencia -->
+
+        <section id="portifolio" class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO;</span></h2>
+                <div class="flex">
+                    <div class="img-port">
+                        <img src="images/educultivo.png" alt="Imagem do projeto de software.">
+                        <div class="overlay-port"><a href="https://github.com/lorenafsv/Educultivo">Educultivo</a></div></a>
+                    </div><!-- fim img-port -->
+
+                    <div class="img-port">
+                        <img src="images/codigo.png" alt="Imagem do código.">
+                        <div class="overlay-port"><a href="https://github.com/lorenafsv/atividadesPraticas">Atividades Práticas</a></div>
+                    </div><!-- fim img-port -->
+                </div><!-- fim flex -->
+            </div><!-- fim interface -->
+        </section><!-- fim portifolio -->
+
+        <section id="contato" class="formulario">
+            <div class="interface">
+                <h2 class="titulo">ENTRE EM <span>CONTATO;</span></h2>
+
+                <form>
+                    <input type="text" placeholder="Seu nome:" required>
+                    <input type="text" placeholder="Seu e-mail:" required>
+                    <textarea placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </div><!-- fim interface -->
+        </section><!-- fim formulario -->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logo.">
+                    </div><!-- fim logo-footer -->
+                    <div class="btn-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/lorena-ferreira-263468198/"><button><img src="images/linkedin.png" alt="Link LinkedIn"></button></a>
+                            </li>
+                            <li>
+                                <a href="mailto:lorena-aparecida@estudante.iftm.edu.br"><button><img src="images/email.png" alt="Link E-mail"></button></a>
+                            </li>
+                        </ul>
+                    </div><!-- fim btn-social -->
+                </div><!-- fim flex -->
+            </div><!-- fim line-footer -->
+        </div><!-- fim interface -->
+    </footer><!-- fim rodape -->
+</body>
+</html>
